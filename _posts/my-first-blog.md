@@ -2,7 +2,7 @@
 title: My First Blog
 date: 2023-10-14 13:47:10 -300
 categories: [homelab,hardware]
-tags: [servers,languages,programming,]
+tags: [servers,languages,programming]
 ---
 
 
