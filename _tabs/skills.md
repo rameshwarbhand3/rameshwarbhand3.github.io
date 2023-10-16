@@ -1,7 +1,7 @@
 ---
 layout: skills
 title: Skills
-icon: fas fa-skill
+icon: fas fa-landmark
 order: 4
 ---
 
