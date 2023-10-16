@@ -19,7 +19,7 @@ timezone: Asia/Kolkata
 
 title: Rameshwar # the main title
 
-tagline: Software Developer | My Personal Site  # it will display as the sub-title
+tagline: Software Developer | My Personal Blog Site  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.

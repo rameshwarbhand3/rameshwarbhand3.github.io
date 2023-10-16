@@ -61,10 +61,11 @@ puts 'Hello World'
 print("Hello World")
 ```
 
-* Six - ' Go '
-```go
-println("Hello World");
-
+* Six - ' Kotlin '
+```kotlin
+fun main(args: Array<String>){
+    println("Hello World")
+}
 ```
 ### Following figure shows languges
 
