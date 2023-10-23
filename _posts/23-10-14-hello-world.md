@@ -61,7 +61,7 @@ fun main(args: Array<String>){
     println("Hello World")
 }
 ```
-### Following figure shows languges
+### Following figure shows languages
 
 
 ![Alt text](https://www.shutterstock.com/shutterstock/photos/2322698711/display_1500/stock-vector-rivne-ukraine-june-set-of-most-popular-scripting-and-programming-languages-logos-2322698711.jpg)
