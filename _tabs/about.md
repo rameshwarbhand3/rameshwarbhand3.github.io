@@ -14,7 +14,7 @@ I am currently focused on learning new Skills which will helpful to solve real w
 
 My primary skills are Core java, Spring boot, Junit, Rest Api, Microservices, Docker, Git, Blogging, HTML/CSS, Javascript, Basic React, MySQL and MongoDb, aws, Okta.
 
-> In case if you want to hire me reach out me on [linkedin](https://linkedin.com/in/rameshwar-bhand){:target="_blank"} or check out my [resume](https://github.com/rameshwarbhand3).
+> In case if you want to hire me reach out me on [linkedin](https://linkedin.com/in/rameshwar-bhand){:target="_blank"} or send me an email [email](https://rameshwarbhand3@gmail.com).
 {: .prompt-tip }
 
 
