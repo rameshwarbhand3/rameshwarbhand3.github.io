@@ -1,5 +1,5 @@
 ---
-title: My First Blog
+title: Hello World
 date: 2023-10-14 13:47:10 -300
 categories: [languages,software]
 tags: [servers,languages,programming]
@@ -10,12 +10,6 @@ tags: [servers,languages,programming]
 
 Hello and welcome to my docs site!
 
-* One
-* Two
-* Three
-* Four
-* Five
-* Six
 
 Here I am going to show you how we can write 'Hello World' in different languages. 
 
