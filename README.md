@@ -1,4 +1,4 @@
-# How to create your personal portfolio wesite github pages using chirpy theme
+# How to create your personal portfolio website by github pages using chirpy theme
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
