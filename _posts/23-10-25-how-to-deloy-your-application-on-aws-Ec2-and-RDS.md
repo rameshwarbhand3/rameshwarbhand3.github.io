@@ -1,13 +1,13 @@
 ---
-title: How to deploy your application using Aws Ec2 and Aws RDS
-date: 2023-10-25 18:47:10 -300
+title: How to deploy your webapp on tomcat with AWS EC2 and RDS(MySql)
+date: 2023-10-25 18:47:10 -350
 categories: [Iaas,software,virtual machine,server]
 tags: [servers,languages,Infrastructure]
 ---
 
 In this blog  I am going to show you we can deploy our application using Amazon Ec2 and RDS. For this we need Amazon web services Ec2 and Rds services. 
 
-### Steps to deploy your application on AWS EC2 and RDS Service
+## Steps to deploy your application on AWS EC2 and RDS Service
 
 1. Create a free tier account on aws and select region. I will follow this tutorial  [create account](https://www.youtube.com/watch?v=xi-JDeceLeI&list=PLpLBSl8eY8jQJ97s0BepJco73zCgbG_VP&index=16).
 
