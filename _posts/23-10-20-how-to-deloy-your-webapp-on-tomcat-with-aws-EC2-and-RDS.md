@@ -1,6 +1,6 @@
 ---
 title: How to deploy your webapp on tomcat with AWS EC2 and RDS 
-date: 2023-10-25 18:47:10 -200
+date: 2023-10-20 18:47:10 -200
 categories: [Iaas,software,virtual machine,server]
 tags: [servers,languages,Infrastructure]
 ---
