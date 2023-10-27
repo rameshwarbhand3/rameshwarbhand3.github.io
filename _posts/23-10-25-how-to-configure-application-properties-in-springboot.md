@@ -1,42 +1,67 @@
 ---
-title: How to configure application properties in springboot application
+title: How to read and override application properties in springboot
 date: 2023-10-25 11:47:10 -200
 categories: [springboot,software,env variable,server]
 tags: [servers,languages,variable]
 ---
 
-## How to configure application properties in  springboot application
+## How to read and override application properties in the springboot
 
-We can access environemnt variables in spring application in two ways.
+We can access application properties as variables in spring boot by following ways.
 
 1. By using @value annotation
-
 2. By @ConfigurationProperties
-3. By using environment variables
 
+We will use below example to explain
+```
+person.first-name=Rameshwar
+person.last-name=Bhand
+person.full-name=Rameshwar Bhand
+```
 
 ### By using @Value annotaion
 
-1. We have to declare your variables in ```application.properties``` file in springboot application.
-2. Suppose if you want to access this variable in your application we can simply used @Value annotation.
-3.  e.g we have ```spring.first-name=abc```in your properties file.To read this from file we just used @Value and assigned variable and used it in your application.
-```
-@Value("${person.first-name})
-private String firstName;
-```
+
+1. Suppose if we want to access any of the property and inject it as variable in your application code(Controller or Service classes)then  we can simply used @Value annotation.
+2.  e.g we have `person.first-name=abc` in your properties file.To read this from file we just used @Value and assigned variable and used it in your application.
+    ```
+    @Value("${person.first-name})
+    private String firstName;
+    ```
 
 ### By using @ConfigurationProperties annotaion
-1. suppose we have number properties which we want to read from properties file, there we have to go for this approach.
-2. we declared one class and add @ConfigurarionProperties & Configuration annotation.
-3.  e.g we declared ```Class PersonConfig``` which has varaible like ```private String firstName```.
-4. We can use this in your application by simply injecting object and access by using getter method.
-```
-@Autoowired
-private PerosnConfig personconfig
-```
+1. Supposing we have a number of properties that we want to read from the properties file, we have to go with this approach.
+2. We can declare a class with the @ConfigurationProprties annotation along with the @Configuration annotation.
+3. we can declare `Class PersonConfig` which map the property like `person.xxx` to the equivalent variable variable like for e.g. `private String firstName`.
 
-### By using environment variable
+   Below is a complete class example to map the properties with person prefix to the java class
 
- Suppose we have some properties in applcation.properties file. If you want to override this properties we can just edit configuration and add properties. 
+    ``` java
+    @Getter
+    @Setter
+    @ConfigurationProperties(prefix = "person")
+    @Configuration
+    public class PersonConfig {
+        private String firstName;
+        private String lastName;
+        private String fullName;
+    }
+    ```
+4. Now In order to use it in the application we can by simply inject the `PersonConfig` object and access it by using getter method.
+    ```
+    @Autowired
+    private PerosnConfig personconfig;
+    ```
 
- Spring boot automatically read override default configuration over properties we provide in edit configuration.
+## Override app config properties using environment variable
+
+If  we want to override person properties per deployment of the application we can do so by environment variable 
+ 
+  As mention in the above example of application properties lets say we want to override person related config properties.
+
+  ```
+  PERSON_FIRST_NAME=John
+  PERSON_ LAST_NAME=Kenny
+  PERSON_FULL_NAME=JOHN Kenny
+  ```
+ Spring boot automatically read and override default configuration.
